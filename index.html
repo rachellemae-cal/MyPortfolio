@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>My Portfolio</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+    <nav>
+        <div class="logo">PORTFOLIO</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="bg-animation">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="home-content">
+            <p class="greeting">👋 Welcome to my portfolio</p>
+            <h1>Hi, I'm <span style="color: var(--accent);">RACHELLE MAE CALIGDONG</span></h1>
+            <div class="typing-text">
+                <span id="typed-text"></span><span class="cursor"></span>
+            </div>
+            <p class="home-description">
+                3rd-year IT student passionate about learning and creating. I bring ideas to life through coding, design, and hands-on experience with emerging technologies.
+            </p>
+            <div class="cta-buttons">
+            <a href="resume.pdf" class="btn btn-primary" download>Hire Me</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+            </div>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" class="social-icon">f</a>
+                <a href="https://github.com" target="_blank" class="social-icon">😺</a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">📷</a>
+            </div>
+        </div>
+        <div class="home-image">
+            <div class="profile-image">
+                <div class="profile-placeholder"><img src="chelle_1.jpg" alt="Profile"></div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Explore my latest work and creative solutions</p>
+        
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image"><img src="project1.png" alt="Profile"></div>
+                        <div class="project-info">
+                            <h3>EnvironApp</h3>
+                            <p>A user-friendly environmental awareness app designed to promote eco-friendly habits, track community clean-up activities, and encourage active participation in keeping the environment clean through an intuitive Figma prototype.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">figma prototype</span>
+                            </div>
+                        <button class="btn btn-primary" onclick="window.open('https://www.figma.com/proto/QD4F7XHS5SM9PL31AAadXj/ECO-APP?node-id=24-209&t=VPIfYvsztgpxEfnR-1', '_blank')"> View Details</button>
+                        </div>
+                    </div>
+
+  
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image"><img src="project2.png" alt="Profile"></div>
+                        <div class="project-info">
+                            <h3>Product Management</h3>
+                            <p>A modern product management system that allows businesses to organize categories, add new products, and efficiently manage inventory in one platform.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MYSQL</span>
+                                <span class="tech-tag">HTML,CSS</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="window.open('https://caligdong.ct.ws', '_blank')">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-image"><img src="project3.png" alt="Profile"></div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p>A responsive WordPress portfolio website designed to highlight personal projects, skills, and experience, complete with customizable sections and user-friendly navigation.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">wordpress</span>
+                                <span class="tech-tag">HTML,CSS</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="window.open('https://rachellemaecaligdong-kxtsh.wordpress.com', '_blank');">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-controls">
+                <button class="carousel-btn" onclick="prevSlide()">‹</button>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                </div>
+                <button class="carousel-btn" onclick="nextSlide()">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-image">
+            <div class="about-placeholder"><img src="profile.png" alt="Profile"></div>
+        </div>
+        <div class="about-content">
+            <h2>About <span style="color: var(--accent);">Me</span></h2>
+            <p>
+                I'm a 3rd-year IT student eager to learn and explore new technologies. 
+                I enjoy experimenting with different tools and building projects that help me grow, 
+                and I am passionate about expanding my skills in software development and problem-solving.
+            </p>
+            <p>
+                My journey in tech has been driven by curiosity and a constant desire to learn and grow. 
+                I believe in clean code, beautiful design, and the power of technology to make a positive impact.
+            </p>
+            <p>
+               When I'm not studying or coding, I enjoy exploring new technologies, experimenting with projects, 
+              and learning from the developer community to improve my skills.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In <span style="color: var(--accent);">Touch</span></h2>
+        <p class="section-subtitle">Have a project in mind? Let's work together to create something amazing</p>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>I'm always excited to hear about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                
+                <div class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div class="info-text">
+                        <h4>Email</h4>
+                        <p>rachellemaecaligdong84@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">📱</div>
+                    <div class="info-text">
+                        <h4>Phone</h4>
+                        <p>09510309103</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-text">
+                        <h4>Location</h4>
+                        <p>Matina Aplaya, Davao City</p>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="your.email@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    Send Message ✉️
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal for Project Details -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">×</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script>
+        // Typing Animation
+        const phrases = [
+            '3rd yr IT Student',
+            'Aspiring Web Designer',
+            'Creative Thinker'
+        ];
+        
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typedTextElement = document.getElementById('typed-text');
+        
+        function typeEffect() {
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                typedTextElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typedTextElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+            }
+            
+            let typeSpeed = isDeleting ? 50 : 100;
+            
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeSpeed = 500;
+            }
+            
+            setTimeout(typeEffect, typeSpeed);
+        }
+        
+        typeEffect();
+
+        // Carousel Functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.project-card');
+        const dots = document.querySelectorAll('.dot');
+        
+        function updateCarousel() {
+            const track = document.getElementById('carouselTrack');
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateCarousel();
+        }
+        
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateCarousel();
+        }
+        
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+        
+        // Auto-advance carousel
+        setInterval(nextSlide, 5000);
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form Submission
+        function handleSubmit(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send this to a backend
+            alert(`Thank you, ${name}! Your message has been sent successfully. I'll get back to you soon at ${email}.`);
+            
+            e.target.reset();
+        }
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(50px)';
+            section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(section);
+        });
+        
+        // Set first section visible immediately
+        document.querySelector('#home').style.opacity = '1';
+        document.querySelector('#home').style.transform = 'translateY(0)';
+    </script>
+</body>
+</html>
