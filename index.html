@@ -11,6 +11,14 @@
   <!-- Navigation -->
     <nav>
         <div class="logo">PORTFOLIO</div>
+
+        <!-- ⭐ ADD THIS HAMBURGER BUTTON HERE -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -332,6 +340,15 @@
         // Set first section visible immediately
         document.querySelector('#home').style.opacity = '1';
         document.querySelector('#home').style.transform = 'translateY(0)';
+
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
     </script>
 </body>
 </html>
