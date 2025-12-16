@@ -896,6 +896,18 @@ h1 {
     .nav-links a {
         font-size: 1.1rem;
     }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-top: 0;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -923,3 +935,15 @@ h1 {
         gap: 2rem;
     }
 }
+
+/* Ensure sections never go under fixed navbar */
+section {
+    padding-top: 100px; /* default space for fixed navbar */
+}
+
+@media (max-width: 768px) {
+    section {
+        padding-top: 120px; /* more space for mobile */
+    }
+}
+
