@@ -886,6 +886,7 @@ h1 {
 @media (max-width: 400px) {
     nav {
         padding: 0.6rem 0.5rem;
+        width: 400px;
     }
 
     .logo {
