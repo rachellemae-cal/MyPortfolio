@@ -73,6 +73,7 @@ nav {
 
 /* Home Section */
 #home {
+    padding-top: 100px;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -845,5 +846,11 @@ h1 {
 
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -6px);
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        padding-top: 120px;
     }
 }
