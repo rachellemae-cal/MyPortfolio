@@ -895,6 +895,6 @@ h1 {
     }
 
     #home {
-        width: 100%;
+        gap: 2rem;
     }
 }
