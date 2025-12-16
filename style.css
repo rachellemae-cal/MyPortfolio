@@ -893,4 +893,8 @@ h1 {
     .logo {
         font-size: 1.2rem;
     }
+
+    #home {
+        width: 100%;
+    }
 }
